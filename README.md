@@ -4,7 +4,7 @@
 
 ## Stack
 Esse é um projeto de Frontend Web feito utilizando ReactJS, HTML e CSS; 
-e o npm como gerenciador de pacotes do NodeJS .
+e o npm como gerenciador de pacotes do NodeJS.
 Sobre a divisão dos arquivos, há apenas um setor. O setor de `components` são 
 os componentes em si do meu projeto (Details, Music, Playlists).
 
