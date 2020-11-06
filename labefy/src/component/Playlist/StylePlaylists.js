@@ -9,6 +9,10 @@ export const ContainerPlaylist = styled.div`
 
 export const Item = styled.li`
     padding: 1px;
+    margin-bottom: 0.5vw;
+    color: green;
+    display: flex;
+    align-items: center;
 `
 
 export const MinimizePlaylistButton = styled.div`
@@ -25,26 +29,18 @@ export const MinimizePlaylistButton = styled.div`
     margin-top: 3vh;
 `
 
-export const RemoveButton = styled.button`
-    width: 5vw;
-    height: 3vh;
-    background-color: red;
-    color: white;
-    font-weight: bold;
-    border-style: none;
-`
-
-export const MoreDetailsButton = styled.button`
-    width: 5vw;
-    height: 3vh;
-    background-color: green;
-    color: white;
-    font-weight: bold;
-    border-style: none;
+export const Icons = styled.img`
+    width: 2vw;
+    margin-left: 0.5vw;
+    cursor: pointer;
 `
 
 export const ListOfPlaylist = styled.ul`
     margin: 0px;
     padding: 0px;
     list-style: none;
+`
+
+export const TitleSection = styled.h3`
+    color: green;
 `

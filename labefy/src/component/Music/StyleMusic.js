@@ -1,22 +1,24 @@
 import styled from 'styled-components'
 
 export const ContainerRegisterMusic = styled.div`
-    width: 50vw;
+    width: 100%;
     min-height: 60vh; 
+    color: green;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     align-items: center;
 `
 
 export const DataEntryFields = styled.div`
+    width: 31.5vw;
     display: flex;
     flex-direction: column;
-    margin: 2vh;
+    margin: 0 0 1vw 0;
 `
 
 export const SelectionField = styled.select`
     width: 21vw;
+    height: 5vh;
 `
 
 export const AddMusicButton = styled.button`

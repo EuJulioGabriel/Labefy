@@ -35,13 +35,12 @@ class Details extends React.Component {
                 <div>
                     {this.state.musicsInPlaylist.map((music) => {
                         return  <ContainerItems key={music.id}>
-                                    Nome da Música: {music.name} 
-                                    Artista: {music.artist} 
+                                    {music.name} - {music.artist} 
                                     <PlayerAudio src={music.url} controls></PlayerAudio> 
                                 </ContainerItems>
                     })}
                 </div>
-                <BackButton onClick={this.props.backPlaylists}>Voltar</BackButton>
+                <BackButton onClick={this.props.backPlaylists}>Ver Playlists</BackButton>
             </ContainerDetails>
         )
     }

@@ -3,7 +3,7 @@ import axios from 'axios'
 
 import { url, headers } from '../../constants/constants'
 
-import { InputNamePlaylist, CreatePlaylistButton, SectionPlaylist } from '../../StyleApp'
+import { InputNamePlaylist, CreatePlaylistButton, SectionPlaylist, TitleSection } from '../../StyleApp'
 
 class CreatePlaylist extends React.Component {
   state = {
@@ -58,7 +58,7 @@ class CreatePlaylist extends React.Component {
   render() {
     return (
       <SectionPlaylist>
-        <h3>Crie sua playlist agora:</h3>
+        <h1>Crie sua playlist agora:</h1>
         <h5> É rápido e fácil</h5>
         <InputNamePlaylist 
           value={this.state.newPlaylist}

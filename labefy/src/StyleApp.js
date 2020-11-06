@@ -1,8 +1,9 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
+    background-color: #f8f8ff;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -10,6 +11,7 @@ export const Container = styled.div`
 `
 
 export const ContainerAddItems = styled.div`
+    width: 100%;
     display: flex;
     justify-content: center;
 `
@@ -52,4 +54,16 @@ export const ShowPlaylistButton = styled.button`
 
 export const SectionPlaylist = styled.div`
     margin-bottom: 1vh;
+    color: green;
+`
+
+export const TitlePage = styled.h1`
+    color: green;
+`
+
+export const ContainerShowPlaylistsButton = styled.div`
+    width: 31.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 `
