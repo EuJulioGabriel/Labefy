@@ -5,7 +5,7 @@ import CreatePlaylist from './component/Playlist/CreatePlaylist'
 import Music from './component/Music/Music'
 
 import { Container, ContainerAddItems, ContainerCreatePlaylist, 
-         ShowPlaylistButton, SectionPlaylist } from './StyleApp'
+         ShowPlaylistButton, SectionPlaylist, TitlePage, ContainerShowPlaylistsButton } from './StyleApp'
 
 class App extends React.Component {
   state = {
@@ -26,28 +26,33 @@ class App extends React.Component {
         )
       } else {
         return (
-          <ShowPlaylistButton 
-            onClick={this.onClickShowPlaylists}
-          >
-            EXIBIR PLAYLISTS
-          </ShowPlaylistButton>)
+          <ContainerShowPlaylistsButton>
+            <ShowPlaylistButton 
+              onClick={this.onClickShowPlaylists}
+            >
+              EXIBIR PLAYLISTS
+            </ShowPlaylistButton> 
+          </ContainerShowPlaylistsButton>
+        )
       }
     }
 
     return (
       <Container>
         <header>
-          <h1>Labefy</h1>
+          <TitlePage>Labefy</TitlePage>
         </header>
+        
         <ContainerAddItems>
           <ContainerCreatePlaylist>
-            <CreatePlaylist />
-            <SectionPlaylist>
-              {renderPlaylists()}
-            </SectionPlaylist>
-          </ContainerCreatePlaylist>
-          <Music />          
+            <CreatePlaylist 
+              onClickShowPlaylist={this.onClickShowPlaylists}
+            />
+            <SectionPlaylist />
+            {renderPlaylists()} 
+          </ContainerCreatePlaylist>          
         </ContainerAddItems>
+        <Music />
       </Container>
     )
   }

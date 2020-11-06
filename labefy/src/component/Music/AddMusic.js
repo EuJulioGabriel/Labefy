@@ -7,7 +7,7 @@ class AddMusic extends React.Component {
     render () {
         return (
             <ContainerRegisterMusic>
-                <h3>Adicione sua música favorita a sua playlist favorita:</h3>
+                <DataEntryFields><h1>Adicione música a sua playlist:</h1></DataEntryFields>
                 <DataEntryFields>
                     <label>Nome da música: </label>
                     <DataInput 
@@ -33,7 +33,7 @@ class AddMusic extends React.Component {
                     />
                 </DataEntryFields>
                 <DataEntryFields>
-                    <p>Selecione a playlist que deseja adicionar: </p>
+                    <label>Selecione a playlist que deseja adicionar: </label>
                     <SelectionField 
                         onChange={this.props.onChangeSelectPlaylist} 
                         value={this.props.selectedPlaylist}
@@ -43,10 +43,12 @@ class AddMusic extends React.Component {
                                 return <option value={playlist.id} key={playlist.id}>
                                             {playlist.name}
                                         </option>
-                            })}
+                        })}
                     </SelectionField>
                 </DataEntryFields>
-                <AddMusicButton onClick={this.props.onClickAddMusic}>ADICIONAR</AddMusicButton>
+                <DataEntryFields>
+                    <AddMusicButton onClick={this.props.onClickAddMusic}>ADICIONAR</AddMusicButton>
+                </DataEntryFields>
             </ContainerRegisterMusic>
         )
     }

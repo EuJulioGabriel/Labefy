@@ -5,6 +5,7 @@ export const ContainerDetails = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: green;
 `
 
 export const ContainerItems = styled.div`
@@ -12,11 +13,12 @@ export const ContainerItems = styled.div`
     flex-direction: column;
     justify-content: center;
     margin: 2vh;
-    font-weight: bold; 
+    font-weight: bold;
+    color: green; 
 `
 
 export const BackButton = styled.button`
-    width: 10vw;
+    width: 8vw;
     height: 6vh;
     background-color: green;
     color: white;
@@ -27,6 +29,7 @@ export const BackButton = styled.button`
     justify-content: center;
     align-items: center;
     margin-top: 3vh;
+    border-radius: 0.5vw;
 `
 
 export const PlayerAudio = styled.audio`
