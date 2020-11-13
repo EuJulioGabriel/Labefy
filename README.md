@@ -19,7 +19,7 @@ Há integrações com uma API externa nesse caso.
 
 ## Deploy com Surge
 
-<a href="http://synonymous-cloth.surge.sh/">Labefy</a>
+<a href="http://labefyjulio.surge.sh/">Labefy</a>
 
 ## Instruções para rodar
 Por ser um projeto com ReactJS, há a necessidade do NodeJS. Com ele em 
